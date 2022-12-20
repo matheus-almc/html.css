@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Links</title>
+    <style>
+        /*Pseudo classes são estados de elementos dentro da HTML */
+
+
+        /*
+        SELETORES PERSONALIZADOS
+        # = id
+        . = class
+        : = pseudo-class
+        :: = pseudo-elemento
+        > = children
+        
+        
+        
+        
+        */
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        a{
+            color: rgb(73, 3, 3);
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        a:visited{
+            color: rgb(243, 12, 12);
+        }
+        a:hover{
+            color: black;
+            text-decoration: underline;
+        }
+        a:active{
+            color: blue;
+        }
+        .especial{
+            background-color: rgba(0, 0, 255, 0.514);
+        }
+        .especial::before{
+            content: '==>';
+        }
+        .especial::after{
+            content: '<==';
+        }
+    </style>
+</head>
+<body>
+    <h1>personalizando Links</h1>
+    <ul>
+        <li><a href="https://github.com/" target="_blank" rel="external">Repositorio Github </a>
+        <li><a class="especial" href="https://www.youtube.com/" target="_blank" rel="external">Canal do youtube </a>
+        <li><a class="especial" href="https://www.linkedin.com/feed/?trk=sem-ga_campid.12619604099_asid.122510712920_crid.509739556235_kw.linked_d.c_tid.kwd-103941963_n.g_mt.e_geo.1031708" target="_blank" rel="external">Meu LinkedIn </a>
+    </ul>
+</body>
+</html>

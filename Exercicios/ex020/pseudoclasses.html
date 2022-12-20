@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pseudo-Classes</title>
+    <style>
+        div > a {
+            display: none;
+        }
+
+        div:hover > a{
+            display: block;
+            color: black;
+            background-color: cadetblue;
+        } 
+
+        div{
+            /*display: inline-block; = colocar tudo na mesma linha */
+            display: inline-block;
+            background-color: aqua;
+            border: 1px solid black;
+            text-align: center;
+            /*height = altura*/
+            height: 200px;
+            /*largura*/
+            width: 200px;
+        }
+         /*pseudo-classe ( : )*/
+        div:hover{
+            background-color: chartreuse;
+        }
+
+    </style>
+</head>
+<body>
+    <div id="01">01</div>
+    <div id="02">02</div>
+    <div id="03">03</div>
+
+    <div>
+        <p>menu de pagina</p>
+        <a href="hover.html">segunda pagina</a>
+    </div>
+</body>
+</html>
